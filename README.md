@@ -1,1 +1,1 @@
-# Simple-request-content-validator
+# SimpleRequestContentValidator
