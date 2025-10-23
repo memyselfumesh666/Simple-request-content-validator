@@ -1,6 +1,6 @@
 # SimpleRequestContentValidator
 
-Your task is to create a simple request content validator that checks whether a given JSON string follows the contract provided below in the OpenAPT format.
+Task is to create a simple request content validator that checks whether a given JSON string follows the contract provided below in the OpenAPT format.
 
 The task includes:
 
