@@ -1,1 +1,58 @@
 # SimpleRequestContentValidator
+
+Your task is to create a simple request content validator that checks whether a given JSON string follows the contract provided below in the OpenAPT format.
+
+The task includes:
+
+1. checking whether all required fields are present,
+
+2. checking that each field is of the type required in the contract
+
+3. where applicable, checking that each field is in the correct format described in the contract
+
+4. making sure that your validator retums an array containing all discovered contract violations
+
+In this task you do not need to worry about the rest of the application, assume that all other pieces, such as controllers and exception handling, are already in place. This task will be run using PHP 8.0.
+
+Validator contract
+
+The validator accepts a JSON string and returns an array of enums describing ALL the found violations if the request content passes the validation, the validator should return an empty array
+
+Importantly, the order of violations in the resumed aray is NOT significant
+
+Available violations
+
+An existing enum class is already used to describe all expected violations. Each failed piece of contract should cause a violation to be added to the validat result array
+
+An instance of a violation can be created by calling a proper static method. 
+
+Task 1
+
+proper static method. Available violations include
+
+Violation:: NO, USER, ID FIELD();
+
+Violation:: INVALID USER ID TYPE();
+
+Violation:: NO CART FIELD();
+
+Violation:: INVALID CART TYPE();
+
+Violation:: INVALID DATE CREATED():
+
+Violation: NO PRODUCT ID FIELD):
+
+Violation: INVALID PRODUCT ID, TYPE();
+
+Violation NO QUANTITY FIELD();
+
+Violation: INVALID QUANTITY TYPE():
+
+Violation: INVALID ITEM TYPE();
+
+Violation:: INVALID, QUANTITY VALUR (1)
+
+Violation INVALID, PRODUCT ID, VALUE():
+
+Violation: INVALID USER, 10, VALUE()
+
